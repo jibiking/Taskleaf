@@ -1,0 +1,1 @@
+Rails.application.config.118n.default_locale = :ja
