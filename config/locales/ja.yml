@@ -1,6 +1,27 @@
---2021-07-20 06:21:32--  https://raw.githubusercontent.com/svenfuchs/rails-118n/master/rails/locale/ja.yml
-raw.githubusercontent.com (raw.githubusercontent.com) をDNSに問いあわせています... 185.199.108.133, 185.199.111.133, 185.199.109.133, ...
-raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443 に接続しています... 接続しました。
-HTTP による接続要求を送信しました、応答を待っています... 404 Not Found
-2021-07-20 06:21:32 エラー 404: Not Found。
+ja:
+  activerecord:
+  errors:
+   messages:
+    record_invalid: "バリデーションに失敗しました: %{errors}"
+    restrict_dependent_destroy:
+      has_one: "%{record}が存在しているので削除できません"
+      has_many: "%{record}が存在しているので削除できません"
+
+  models:
+    task: タスク
+  attributes:
+    task:
+    id: ID
+    name: 名称
+    description: 詳しい説明
+    created_at: 登録日時
+    updated_at: 更新日時
+
+  helpers:
+    select:
+      prompt: 選択してください
+    submit:
+      create: 登録する
+      submit: 保存する
+      update: 更新する
 
